@@ -11,13 +11,13 @@ class CourseHandlerTest {
 
     @Test
     void enrollToCourseSuccess() {
-        boolean wasSuccesfull = handler.enrollToCourse(1990, "aa222");
+        boolean wasSuccesfull = handler.enrollToCourse(1990, "22ssdsd");
         assertTrue(wasSuccesfull);
     }
 
     @Test
     void enrollToCourseNotOldEnough() {
-        boolean wasSuccesfull = handler.enrollToCourse(2016, "2222");
+        boolean wasSuccesfull = handler.enrollToCourse(2016, "");
         assertFalse(wasSuccesfull);
     }
 }
